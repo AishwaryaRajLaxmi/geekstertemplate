@@ -1,0 +1,277 @@
+:root {
+  --primary-color: #29b475;
+  --black-color: #16252d;
+  --white-color: #ffffff;
+  --secondary-color: #22adcf;
+  --bg-primary-color: white;
+  --bg-secondary-color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  border: none;
+}
+
+.navbar {
+  height: 75px;
+  padding: 0px 120px;
+  background-color: var(--bg-primary-color);
+  box-shadow: 3px 10px 25px -8px rgba(0, 0, 0, 0.75);
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.align-item-center {
+  align-items: center;
+}
+
+.navbar .navlist {
+  gap: 20px;
+}
+
+.navbar .navlist a {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--black-color);
+  transition: all 0.2s;
+  position: relative;
+}
+
+.navbar .navlist a:hover {
+  color: #29b475;
+}
+
+.navbar .navlist a::after {
+  content: "";
+  display: block;
+  width: 0;
+  right: 0;
+  height: 2px;
+  position: absolute;
+  top: 20px;
+  background-color: #29b475;
+  transition: all 0.2s;
+}
+.navbar .navlist a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #29b475;
+}
+
+.navbar .call-btn {
+  background-color: var(--primary-color);
+  padding: 12px 20px;
+  color: var(--white-color);
+  border-radius: 5px;
+  box-shadow: 3px 10px 25px -20px rgba(0, 0, 0, 0.75);
+}
+
+.flex-basis {
+  flex-basis: 50%;
+}
+.main .about {
+  padding: 60px 120px;
+}
+
+.about h1 {
+  padding-bottom: 35px;
+  font-size: 45px;
+}
+
+h1 span {
+  color: #29b475;
+}
+.about p {
+  padding-bottom: 35px;
+  color: grey;
+  font-size: 30px;
+}
+
+p span {
+  color: rgb(107, 102, 102);
+  font-weight: 700;
+}
+
+.apply-btn {
+  margin-top: 25px;
+  padding: 13px 17px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #29b475;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: rgb(39, 152, 39);
+}
+
+.image-container img {
+  /* width: 100%; */
+  height: 500px;
+  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+  filter: blur(1px);
+}
+img {
+  width: 100%;
+  float: none;
+}
+.d-block {
+  display: block;
+}
+
+.footer h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 60px;
+}
+
+.footer h2 span {
+  color: #29b475;
+}
+
+.about-package {
+  margin: 80px 120px;
+  display: flex;
+  gap: 20px;
+}
+.card {
+  background-color: #e2eff2;
+  flex-basis: 33%;
+  padding: 40px 60px;
+  height: 200px;
+  border-radius: 7px;
+}
+
+.card2 {
+  background-color: #f3daea;
+  flex-basis: 33%;
+  padding: 40px 60px;
+  height: 200px;
+  border-radius: 7px;
+}
+
+.card3 {
+  background-color: #e2eff2;
+  flex-basis: 33%;
+  padding: 40px 60px;
+  height: 200px;
+  border-radius: 7px;
+}
+
+.card span {
+  color: #29b475;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.card2 span {
+  color: #f18f33;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.card3 span {
+  color: rgb(40, 158, 237);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.card .icon {
+  background-color: #29b475;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  margin-left: 100px;
+  /* margin-top: -55px; */
+}
+
+.card2 .icon {
+  background-color: #f18f33;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  margin-left: 100px;
+  /* margin-top: -55px; */
+}
+
+.card3 .icon {
+  background-color: #58b8eb;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  margin-left: 100px;
+  /* margin-top: -55px; */
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card p {
+  margin-top: 5px;
+  color: grey;
+}
+
+.card2 p {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.card3 p {
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.last {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  width: 50%;
+  background-color: #29b475;
+  text-align: center;
+  margin: auto;
+  height: 110px;
+  padding: 35px 20px;
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.last button {
+  color: #29b475;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  /* box-shadow: 1px 1px 1px 1px rgb(56, 49, 49); */
+}
